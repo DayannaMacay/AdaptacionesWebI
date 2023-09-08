@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dayanna Macay">
+    <meta name="keywords" content="Netflix Disney Amazon Hbo Spotify Paramount">
+    <meta name="description" content="Plataformas Digitales">
+
+    <!--Descargamos Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--Linkeamos la plantilla de Bootswatch para el diseño de la pagina-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Descargamos los iconos del Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--Descargamos google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Saira&display=swap" rel="stylesheet">
+
+    <!--Linkeamos los estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <header>
+      <!--Barra horizontal con imagenes de logos de plataformas-->
+    <div id="inicio" class="contenedor">
+      <marquee scrollamount="15" behavior="alternate" direction="">
+          <img src="imagenes/ejemplo.png" alt="netflix" width="60" height="20"> 
+          <img src="imagenes/ejemplo2.png" alt="disney" width="60" height="20">
+          <img src="imagenes/ejemplo3.png" alt="prime" width="60" height="20">
+          <img src="imagenes/ejemplo4.png" alt="hbo" width="60" height="20">
+          <img src="imagenes/ejemplo5.png" alt="spotify" width="60" height="20">
+          <img src="imagenes/ejemplo6.png" alt="paramount" width="60" height="20">
+          <img src="imagenes/ejemplo7.png" alt="youtube" width="60" height="20">
+          <img src="imagenes/ejemplo8.png" alt="crunchy" width="60" height="20">
+          <img src="imagenes/ejemplo9.png" alt="magistv" width="60" height="20">
+          <img src="imagenes/ejemplo10.png" alt="directv" width="60" height="20">
+          <img src="imagenes/ejemplo.png" alt="netflix" width="60" height="20"> 
+          <img src="imagenes/ejemplo2.png" alt="disney" width="60" height="20">
+          <img src="imagenes/ejemplo3.png" alt="prime" width="60" height="20">
+          <img src="imagenes/ejemplo4.png" alt="hbo" width="60" height="20">
+          <img src="imagenes/ejemplo5.png" alt="spotify" width="60" height="20">
+          <img src="imagenes/ejemplo6.png" alt="paramount" width="60" height="20">
+          <img src="imagenes/ejemplo7.png" alt="youtube" width="60" height="20">
+          <img src="imagenes/ejemplo8.png" alt="crunchy" width="60" height="20">
+          <img src="imagenes/ejemplo9.png" alt="magistv" width="60" height="20">
+          <img src="imagenes/ejemplo10.png" alt="directv" width="60" height="20">
+          <img src="imagenes/ejemplo.png" alt="netflix" width="60" height="20"> 
+          <img src="imagenes/ejemplo2.png" alt="disney" width="60" height="20">
+          <img src="imagenes/ejemplo3.png" alt="prime" width="60" height="20">
+          <img src="imagenes/ejemplo4.png" alt="hbo" width="60" height="20">
+          <img src="imagenes/ejemplo5.png" alt="spotify" width="60" height="20">
+          <img src="imagenes/ejemplo6.png" alt="paramount" width="60" height="20">
+          <img src="imagenes/ejemplo7.png" alt="youtube" width="60" height="20">
+          <img src="imagenes/ejemplo8.png" alt="crunchy" width="60" height="20">
+          <img src="imagenes/ejemplo9.png" alt="magistv" width="60" height="20">
+          <img src="imagenes/ejemplo10.png" alt="directv" width="60" height="20">
+      </marquee>
+  </div>
+    </header>
+
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+          <img src="imagenes/logoempresa.PNG" alt="empresa" width="150" height="75">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio <i class="bi bi-house-door-fill"></i>
+                </font></font><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(actual)</font></font></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nosotros <i class="bi bi-people-fill"></i></font></font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#plataformas"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Plataformas <i class="bi bi-tv-fill"></i></font></font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactos"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Servicio al cliente <i class="bi bi-headset"></i></font></font></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Carrusel de fotos automatico con Estrenos de las plataformas-->
+    <section id="carrusel" class="carrusel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <a href="#plataformas"><img src="imagenes/estrenos.jpg" alt="estreno" class="w-100" height="435"></a> 
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#plataformas"><img src="imagenes/estrenetflix.jpg" alt="estreno" class="w-100" height="435"></a> 
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#plataformas"><img src="imagenes/estredisney.jpeg" alt="estreno" class="w-100" height="435"></a> 
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#plataformas"><img src="imagenes/estrehbo.jpg" alt="estreno" class="w-100" height="435"></a> 
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#plataformas"><img src="imagenes/estreprime.jpg" alt="estreno" class="w-100" height="435"></a> 
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#plataformas"><img src="imagenes/estreparamount.jpg" alt="estreno" class="w-100" height="435"></a>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#plataformas"><img src="imagenes/estrecrunchy.jpg" alt="estreno" class="w-100" height="435"></a>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#plataformas"><img src="imagenes/promspotify.jpg" alt="promo" class="w-100" height="435"></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section> 
+    
+    <!--SOBRENOSOTROS-->
+    <hr>
+    <section id="nosotros" class="container p-4">
+        <div class="titulos">
+            <h2 class="text-center text-success fs-4">NOSOTROS</h2>
+            <h3 class="text-center text-info fs-5">La mejor tienda online de plataformas digitales</h3>
+        </div>
+        <div class="d-flex">
+            <img class="p-3" src="imagenes/logoempresa.png" alt="nosotros" width="400" height="400">
+            <p class="parrafonosotros p-3">MacBros es una plataforma que esta en funcionamiento desde hace 2 años en Ecuador y con más de 30 distribuidores que ayudan a todos sus clientes adquirir de almenos 15 plataformas de streaming entre las cuales se encuentran las más reconocidas como (Netflix, Amazon Prime, Disney +, HBO, Spotify, etc...). <br><br>
+            Al registrarte en MacBros, podras comprar la plataforma de tu eleccion en cualquier lugar, desde cualquier dispositivo y al mejor precio del mercado; ademas, ofrecemos cuentas 100% originales sin riesgo de caida. <br><br>
+            Queremos entretener al mundo. Más allá de tus gustos y del lugar donde vivas, te damos acceso a series, documentales, películas y juegos móviles de primer nivel con nuestras plataformas. Nuestros clientes controlan qué quieren ver y cuándo quieren verlo con una simple membresía.</p>
+        </div>
+    </section>
+    <hr>
+
+    <!--Incorporamos tarjetas para presentacion de PLATAFORMAS-->
+    <section id="plataformas" class="plataformas container-fluid w-100 p-3">
+        <h2 class="titulos text-center p-4">PLATAFORMAS</h2>
+        <!--div para tarjetas nivel-->
+        <div class="tarjetas d-flex justify-content-center">
+            <div class="card text-white bg-danger mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">NETFLIX</div>
+                <div class="card-body">
+                    <center><img src="imagenes/logonet.png" alt="logo" width="120" height="90"></center>
+                </div>
+              </div>
+              <div class="card text-white bg-primary mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">DISNEY</div>
+                <div class="card-body">
+                    <center><img src="imagenes/logodis.png" alt="logo" width="110" height="90"></center>
+                </div>
+              </div>
+              <div class="card text-white bg-info mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">HBO MAX</div>
+                <div class="card-body">
+                    <center><img src="imagenes/logohbo.png" alt="logo" width="110" height="90"></center>
+                </div>
+              </div>
+              <div class="card text-white bg-primary mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">AMAZONPRIME</div>
+                <div class="card-body">
+                    <center><img src="imagenes/logoamaz.png" alt="logo" width="120" height="90"></center>
+                </div>
+              </div> 
+              <div class="card text-white bg-success mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">SPOTIFY</div>
+                <div class="card-body">
+                    <center><img src="imagenes/logospoty.png" alt="logo" width="110" height="90"></center>
+                </div>
+              </div>
+              <div class="card text-white bg-warning mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">CRUNCHYROLL</div>
+                <div class="card-body">
+                  <center><img src="imagenes/logocrunchy.png" alt="logo" width="120" height="90"></center>
+                </div>
+              </div>
+              <div class="card text-white bg- mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">MAGISTV</div>
+                <div class="card-body">
+                  <center><img src="imagenes/logomagis.png" alt="logo" width="110" height="90"></center>
+                </div>
+              </div>
+              <div class="card text-white bg-danger mb-3" style="max-width: 10rem; max-height: 12rem;">
+                <div class="card-header text-center">YOUTUBE</div>
+                <div class="card-body">
+                  <center><img src="imagenes/logoyt.png" alt="logo" width="120" height="90"></center>
+                </div>
+              </div>               
+        </div>
+        <h4 class="planes text-center">Mira tus pelis y series favoritas, te damos la oportunidad de reunir el contenido de las plataformas mas emblemáticas y lo ponemos en un solo lugar exclusivo para ti.
+        </h4>
+        <br>
+        <!--Boton direccionable a pagina de planes-->
+        <a href="index.php"><center><button id="planes" type="button" class="btn btn-danger">Ir a comprar</button></center></a>
+        <br>
+    </section>
+
+    <!--Pie de pagina-->
+    <hr>
+    <footer id="contactos" class="bg-secondary">
+      <center>
+      <div class="bg-secondary piepagina">
+        <div class="d-flex">
+          <div class="pie1 col-lg-3">
+            <h6 class="text-success">UBICACIÓN</h6>
+            <p class="">
+            <i class="bi bi-geo-alt-fill"></i>:Quito - Ecuador
+            </p>
+          </div>
+          <div class="pie2 col-lg-3">
+            <h6 class="text-warning">CONTACTO</h6>
+            <p>
+            <i class="bi bi-telephone"></i>: 0990358413 <br> 
+            <i class="bi bi-envelope-at-fill"></i>: dayanamacay@hotmail.com
+            </p>
+          </div>
+          <div class="pie3 col-lg-3">
+            <h6 class="text-success">REDES</h6>
+            <p>
+              <i class="bi bi-whatsapp"></i>: 0990358413 <br>
+              <i class="bi bi-facebook"></i>: MacBros <br>
+              <i class="bi bi-instagram"></i>: macbros 
+            </p>
+          </div>
+          <div class="pie4 col-lg-3">
+            <h6 class="text-warning">HORARIO DE ATENCIÓN</h6>
+          Lunes a Sabados 9:00am - 9:30pm <br>
+          Domingos 10:00am - 7:00pm
+          </div>
+        </div>
+        <div class="pagos col-lg-4 col-lg-4">
+          <center><h6 class="tituloMp text-primary">METODOS DE PAGOS</h6><img class="justify-content-center" src="imagenes/pagos.png" alt="pagos" height="60px"></center>
+        </center>
+        </div>
+      </div>
+      
+      <hr>
+      <center class="derechos">MACBROS 2021 © Todos los derechos reservados | Empowered By</center> 
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

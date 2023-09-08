@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dayanna Macay">
+    <meta name="keywords" content="Netflix Disney Amazon Hbo Spotify Paramount">
+    <meta name="description" content="Plataformas Digitales">
+    <!--Descargamos Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--Linkeamos la plantilla de Bootswatch para el diseño de la pagina-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Descargamos los iconos del Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--Descargamos google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Saira&display=swap" rel="stylesheet">
+
+    <!--Linkeamos los estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>PAGOS</title>
+</head>
+<body>
+
+    <nav class="nav navbar-expand-lg" data-bs-theme="dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="imagenes/logoempresa.png" alt="logo" width="" height="80">
+            <div>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.html"><i class="bi bi-box-arrow-left"></i> Volver</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <section>
+        <center><h4 class="text-warning">REGISTRO DE PAGO</h4></center>
+        
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <img src="imagenes/infPago.PNG" alt="" height="480" width="480">
+            </div>
+
+            <div class="col-lg-6">
+                <form action="modelo/registroPago.php" method="post" class="col-lg-6">
+                        <div class="form-group">
+                            <label for="cuenta" class="form-label mt-1">Cuenta:</label>
+                            <input type="text" class="form-control" name="cuenta" id="cuenta" placeholder="Cuenta" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="valor" class="form-label mt-1">Valor a depositar:</label>
+                            <input type="text" class="form-control" name="valor" id="valor" placeholder="Valor" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInput" class="form-label mt-1">Número de transacción bancaria</label>
+                            <input type="text" class="form-control" name="numtransaccion" id="numtransaccion" placeholder="# de transacción" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInput" class="form-label mt-1">Valor de deposito / tranferencia</label>
+                            <input type="text" class="form-control" name="precio" id="precio" placeholder="Valor depositado / transferido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formFile" class="form-label">Subir comprobante de pago</label>
+                            <input class="form-control" style="color: black" name="comprobante" type="file" id="comprobante" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInput" class="form-label mt-1">Número de teléfono</label>
+                            <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Ingrese su número de teléfono" required>
+                        </div>
+                        <!--BOTON DE REGISTRO PAGO-->
+                        <button type="submit" class="btn btn-warning mb-3" id="btn-iniciar-sesion"><i class="bi bi-person-fill"></i>Registrar pago</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-secondary">
+        <div class="pie-compras">
+            <h6 class="bg-danger">NOTA:</h6>
+            <ul>
+                <li>ATENCION: Los precios y la disponibilidad pueden estar sujetos a modificaciones sin previo aviso. En caídas masivas de cuentas, el tiempo de respuesta puede ser hasta de 72 Horas, se irán brindado alternativas.</li>
+                <li>Horario de soporte: lunes a sábado 8:00 AM a 12:00 PM y de 2:00 PM a 10:00 PM domingos y festivos 8:00 AM a 12:00 PM y de 2:00 PM a 6:00 PM.</li>
+                <li>Al realizar la compra debes registrar el pago y al hacerlo la entrega puede demorar entre 15-30 minutos, máximo un dia. Si pasan las 24 horas contacta al número de teléfono que esta en la parte inferior por whatsapp.</li>
+                <center><i class="whatsapp bi-whatsapp"></i>: 0990358413</center>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Función para obtener el valor del parámetro "nombre" de la URL
+        function obtenerParametro(nombre) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nombre);
+        }
+        // Obtener el nombre de la imagen de la URL
+        const nombreImagen = obtenerParametro('nombre');
+        const valorDeposito = obtenerParametro('valor'); // Obtener el valor de depósito
+        // Colocar automáticamente el nombre y el valor en los campos correspondientes
+        if (nombreImagen) {
+            const cuentaInput = document.getElementById('cuenta');
+            cuentaInput.value = decodeURIComponent(nombreImagen);
+            cuentaInput.readOnly = true; // Hacer que el campo de la cuenta sea de solo lectura
+        }
+        if (valorDeposito) {
+            const valorInput = document.getElementById('valor');
+            valorInput.value = decodeURIComponent(valorDeposito);
+            valorInput.readOnly = true; // Hacer que el campo de valor sea de solo lectura
+        }
+        // Evento para comprobar si el valor de depósito/transferencia coincide con el valor a depositar
+        const precioInput = document.getElementById('precio');
+        const valorInput = document.getElementById('valor');
+        precioInput.addEventListener('blur', function () {
+            const precio = precioInput.value;
+            const valor = valorInput.value;
+            if (precio !== valor) {
+                precioInput.value = ''; // Vaciar el campo precio
+                alert('Asegúrate de que el valor del deposito o transferencia sea el mismo que se encuentra en "Valor a depositar".');
+            }
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

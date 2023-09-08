@@ -1,0 +1,133 @@
+.titulos {
+    font-family: 'Russo One', sans-serif;
+    ;
+}
+
+.parrafonosotros {
+    font-family: 'Saira', sans-serif;
+    font-size: 14.7px;
+    text-align: justify;
+}
+
+.navbar {
+    font-size: 17px;
+    position: fixed;
+    margin-top: 30px;
+    top: 0;
+    width: 100%;
+}
+
+.carrusel {
+    margin-top: 90px;
+}
+
+.tarjetas {
+    margin-top: 20px;
+    height: auto;
+}
+
+.plataformas {
+    font-family: 'Saira', sans-serif;
+    font-size: 14.5px;
+}
+
+.planes {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.piepagina {
+    text-align: justify;
+    font-family: 'Saira', sans-serif;
+    color: aliceblue;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.pagos {
+    width: 100%;
+    font-family: 'Saira', sans-serif;
+}
+
+.derechos {
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.contenedor-planes {
+    font-family: 'Saira', sans-serif;
+}
+
+.form-group {
+    width: 450px;
+}
+
+.form-control {
+    background-color: darkgray;
+}
+
+* {
+    font-family: 'Saira', sans-serif;
+}
+
+.whatsapp {
+    color: green;
+    font-size: 1.2em;
+}
+
+.pie-compras {
+    color: white;
+    font-size: 0.8em;
+    justify-content: space-between;
+}
+
+.nav {
+    font-size: 17px;
+    top: 0;
+    width: 100%;
+}
+
+
+.video-container {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+}
+
+
+.media-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.media-container img {
+    transition: transform 0.3s; /* Agregar una transición suave */
+}
+
+.media-container:hover img {
+    transform: scale(1.1); /* Escalar la imagen al 110% cuando el mouse está sobre ella */
+}
+
+/*body {
+    background: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), url('https://www.teknofilo.com/wp-content/uploads/2021/06/Netflix-1280x720.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; 
+} */
+
+
+
+
+
